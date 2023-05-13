@@ -1,0 +1,24 @@
+@font-face {
+	font-family:ZillaSlab-MediumItalic;
+	src:url(../fuentes/zil/ZillaSlab-MediumItalic.ttf);
+}
+@font-face {
+	font-family:Zilla-Light;
+	src:url(../fuentes/zil/ZillaSlab-Light.ttf);
+}
+@font-face {
+	font-family:V;
+	src:url(../fuentes/rvo/Arvo-Regular.ttf);
+}
+@font-face {
+	font-family:raleway-regular;
+	src:url(../fuentes/raleway/static/Raleway-Regular.ttf);
+}
+@font-face {
+	font-family:sourcesans;
+	src:url(../fuentes/sourcesans/sourcesanspro-regular.otf);
+}
+@font-face {
+	font-family:opensans-regular;
+	src:url(../fuentes/opensans/OpenSans-Regular.ttf);
+}

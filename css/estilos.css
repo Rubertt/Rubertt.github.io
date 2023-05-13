@@ -1,0 +1,216 @@
+@import url('reset.css');
+
+/*--- Variables ---*/
+:root {
+	--azul:#0C3C60;
+	--blancoclaro:#D7DFE5;
+	--amarillo-1:#FFDE72;
+}
+
+/*-------- ESTILOS GENERALES --------*/
+body {
+	background:#F1F0ED;
+	font-family:Arial, Helvetica, Sans-serif;
+}
+a {text-decoration:none;color:#000;}
+
+.contenedor {
+	overflow:hidden;
+	width:100%;
+	max-width:1024px;
+	margin:auto;
+	display:grid;
+	grid-gap:20px;
+	grid-template-columns:repeat(2, 1fr);
+	grid-template-rows:repeat(6, auto);
+
+	grid-template-areas:"header				header"
+						"buscador 			buscador"
+						"subtitulo 			subtitulo"
+						"conte_negocio_1 	conte_negocio_2"
+						"conte_negocio_3 	conte_negocio_4"
+						"footer 			footer";
+}
+
+/*-------- HEADER --------*/
+.contenedor .header{
+	width:100%;
+	grid-area:header;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e4e0e0 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e4e0e0 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffffff 0%,#e4e0e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e4e0e0',GradientType=0 ); /* IE6-9 */
+}
+
+/*-------- LOGO --------*/
+.contenedor .header .logo {margin:35px 20px;position:absolute;}
+.contenedor .header .logo a {
+	font-size:20px;
+	font-family:raleway-regular;
+	color:#000;
+}
+.contenedor .header .logo a span{color:#FFDE72;}
+
+/*-------- MENU DE NAVEGACION --------*/
+.contenedor .header .nav{text-align:right;margin:20px;}
+
+.contenedor .header .nav ul li{display:inline;}
+
+.contenedor .header .nav ul li a {
+	font-size:14px;
+	padding:10px;
+	color:black;
+	font-family:opensans-regular;
+	border-radius:2px;
+}
+
+.contenedor .header .nav ul li a:hover {color:#fff;background:#FFDE72;}
+
+/*--- SELECTOR DE MODEDA ---*/
+.contenedor .header .nav ul li .moneda {display: inline;}
+
+.contenedor .header .nav ul li .moneda select {
+	padding:8px 0px;
+	border-radius:2px;
+	width:60px;
+	margin:10px 10px 0px 40px;
+	background:transparent;
+	color:#000;
+	border:none;
+	font-family:opensans-regular;}
+
+.contenedor .header .nav ul li .moneda select:focus{outline:none;}
+.contenedor .header .nav ul li .moneda select:hover{cursor: pointer;color:#fff;background:#FFDE72;}
+
+/*-------- CARRITO DE COMPRAS --------*/
+.contenedor .header .nav ul li .carrito {
+	width:45px;
+	height:45px;
+	border:none;
+	background:transparent;
+	float:right;
+}
+.contenedor .header .nav ul li .carrito:focus{outline:none;}
+
+.contenedor .header .nav ul li .carrito:hover{
+	background:#FFDE72;
+	border-radius:2px;
+	cursor:pointer;}
+
+.contenedor .header .nav ul li .carrito img{
+	width:30px;
+	height:30px;
+	margin-top:5px;
+	margin-right:2px;
+}
+
+/*-------- IMAGEN DE FONDO DEL BUSCADOR --------*/
+.contenedor .buscador {
+	width:100%;
+	margin:auto;
+	background-image:url(../imagenes/fondo3.jpg);
+	grid-area:buscador;}
+
+/*-------- TEXTO DEL BUSCADOR --------*/
+.contenedor .buscador form p {
+	color:#fff;
+	font-size:47px;
+	font-family:sourcesans;
+	text-align:center;
+	margin:130px 0px 20px 0px;}
+
+/*--- BARRA DE BUSQUEDA ---*/
+.contenedor .buscador .barra {
+	font-family:ZillaSlab-MediumItalic;
+	padding:8px 4px 8px 24px;
+	width:350px;
+	border-radius:5px;
+	border:1px solid #fff;
+	margin:auto;
+	display:block;
+	margin-bottom:130px;
+}
+.contenedor .buscador .barra:hover{border:1px solid var(--amarillo-1);}
+.contenedor .buscador .barra:focus{outline:none;border:1px solid #000;border-radius:5px;}
+
+/*-------- SUBTITULO -------*/
+.contenedor .subtitulo{
+	font-size:26px;
+	display: block;
+	text-align: center;
+	font-family:V;
+	margin:20px;
+	width:100%;
+	grid-area:subtitulo;
+}
+
+/*-------- NEGOCIOS --------*/
+.contenedor .conte_negocio_1{grid-area:conte_negocio_1;}
+.contenedor .conte_negocio_2{grid-area:conte_negocio_2;}
+.contenedor .conte_negocio_3{grid-area:conte_negocio_3;}
+.contenedor .conte_negocio_4{grid-area:conte_negocio_4;}
+
+.contenedor .conte_negocio_1,
+.contenedor .conte_negocio_2,
+.contenedor .conte_negocio_3,
+.contenedor .conte_negocio_4{width:95%;position:relative;margin-left:20px;margin-bottom:20px;}
+
+.contenedor .conte_negocio_1 img, 
+.contenedor .conte_negocio_2 img, 
+.contenedor .conte_negocio_3 img,
+.contenedor .conte_negocio_4 img{
+	width:95%;
+	height:170px;
+	border-radius:7px;
+}
+
+.contenedor .fondo-negocio1, 
+.contenedor .fondo-negocio2, 
+.contenedor .fondo-negocio3,
+.contenedor .fondo-negocio4{
+	width:95%;
+	height:80px;
+	position:absolute;
+	top:65%;
+	background:#fff;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	font-size:20px;
+	font-family:Zilla-Light;
+}
+
+.contenedor .conte_negocio_1 .texto-negocio1, 
+.contenedor .conte_negocio_2 .texto-negocio2, 
+.contenedor .conte_negocio_3 .texto-negocio3,
+.contenedor .conte_negocio_4 .texto-negocio4{padding:15px 0px 0px 17px;}
+
+.contenedor .conte_negocio_1 .texto-negocio1:hover{text-decoration:underline;} 
+.contenedor .conte_negocio_2 .texto-negocio2:hover{text-decoration:underline;} 
+.contenedor .conte_negocio_3 .texto-negocio3:hover{text-decoration:underline;}
+.contenedor .conte_negocio_4 .texto-negocio4:hover{text-decoration:underline;}
+
+/*-------- FOOTER --------*/
+.contenedor .footer {
+	width:100%;
+	background:#000000;
+	font-family:V;
+	font-size:15px;
+	color:#fff;
+	padding:60px 0;
+	text-align:center;
+	grid-area:footer;
+}
+
+@media screen and (max-width: 768px){
+	.contenedor {
+		grid-template-areas:"header				header"
+							"buscador 			buscador"
+							"subtitulo 			subtitulo"
+							"conte_negocio_1 	conte_negocio_1"
+							"conte_negocio_2 	conte_negocio_2"
+							"conte_negocio_3 	conte_negocio_3"
+							"conte_negocio_4 	conte_negocio_4"
+							"footer 			footer";
+	}
+}
