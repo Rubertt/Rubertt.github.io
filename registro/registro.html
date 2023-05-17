@@ -9,15 +9,24 @@
 	<link rel="stylesheet" type="text/css" href="../css/estilos_registro.css">
 </head>
 <body>
-	<div class="formulario">
-		<form>
-			<h1>Registro</h1>
-			<input type="text" placeholder="Nombre" name="nombre" maxlength="20">
-			<input type="password" name="contraseña" placeholder="Contraseña" maxlength="20">
-			<input type="email" name="correo" placeholder="Correo Electronico">
-			<input type="submit" value="Registrate">		
-		</form>
+	<div class="contenedor">
+		<header class="header">
+			<div class="logo"><a href="../">LEGON <span>DELIVERY</span></a></div>
+		</header>
+		<div class="formulario">
+			<form>
+				<h1>Crear cuenta</h1>
+				<input type="text" placeholder="Nombre y apellido" name="nombre" maxlength="20">
+				<input type="email" name="correo" placeholder="Número de celular o correo electronico">
+				<input type="password" name="contraseña" placeholder="Contraseña" maxlength="20">
+				<input type="password" name="contraseña" placeholder="Vuelve a escribir la contraseña" maxlength="20">
+				
+				<input type="submit" value="Continuar">
+				<p>¿Ya tienes cuenta? <a href="#">Iniciar seción</a></p>	
+			</form>
+		</div>
+		<script type="text/javascript" src="../js/codigo.js">	</script>
 	</div>
-	<script type="text/javascript" src="../js/codigo.js">	</script>
+	
 </body>
 </html>

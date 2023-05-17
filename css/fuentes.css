@@ -1,14 +1,6 @@
 @font-face {
-	font-family:ZillaSlab-MediumItalic;
-	src:url(../fuentes/zil/ZillaSlab-MediumItalic.ttf);
-}
-@font-face {
-	font-family:Zilla-Light;
-	src:url(../fuentes/zil/ZillaSlab-Light.ttf);
-}
-@font-face {
-	font-family:V;
-	src:url(../fuentes/rvo/Arvo-Regular.ttf);
+	font-family:raleway-semibold;
+	src:url(../fuentes/raleway/Raleway-SemiBold.ttf);
 }
 @font-face {
 	font-family:raleway-regular;
